@@ -243,7 +243,3 @@ This project provides a foundation that can be extended for production use:
 - **User feedback loop** — Allow users to confirm or correct predictions, building a labeled dataset
 - **Fine-tune periodically** — Retrain for 1-2 epochs on collected real logs every 1-2 weeks
 - **Expected improvement** — After 2-3 fine-tuning cycles, production accuracy should reach 99.5%+
-
-## License
-
-MIT
