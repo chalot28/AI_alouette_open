@@ -1,0 +1,30 @@
+version: 1
+disable_existing_loggers: false
+
+formatters:
+  standard:
+    format: "%(asctime)s | %(levelname)-8s | %(name)s | %(message)s"
+    datefmt: "%Y-%m-%d %H:%M:%S"
+  rich:
+    format: "%(message)s"
+
+handlers:
+  console:
+    class: rich.logging.RichHandler
+    level: INFO
+    formatter: rich
+    rich_tracebacks: true
+    markup: true
+
+  file:
+    class: logging.handlers.RotatingFileHandler
+    level: DEBUG
+    formatter: standard
+    filename: logs/training.log
+    maxBytes: 10_485_760  # 10 MB
+    backupCount: 5
+    encoding: utf-8
+
+root:
+  level: DEBUG
+  handlers: [console, file]

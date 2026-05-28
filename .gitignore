@@ -1,0 +1,100 @@
+# ──────────────────────────────────────────────
+# Python
+# ──────────────────────────────────────────────
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.pyd
+*.egg
+*.egg-info/
+dist/
+build/
+*.egg-info/
+site-packages/
+
+# ──────────────────────────────────────────────
+# Virtual Environment
+# ──────────────────────────────────────────────
+.venv/
+env/
+venv/
+.ENV/
+env.bak/
+venv.bak/
+
+# ──────────────────────────────────────────────
+# IDE / Editor
+# ──────────────────────────────────────────────
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+*.iml
+.vs/
+
+# ──────────────────────────────────────────────
+# Jupyter Notebook
+# ──────────────────────────────────────────────
+.ipynb_checkpoints/
+*.ipynb_checkpoints/
+
+# ──────────────────────────────────────────────
+# Data (raw data quá lớn, không push lên Git)
+# ──────────────────────────────────────────────
+data/raw/
+data/processed/
+data/interim/
+data/external/**
+
+# ──────────────────────────────────────────────
+# Model checkpoints (file lớn, không push)
+# ──────────────────────────────────────────────
+models/*.pt
+models/*.onnx
+models/*.onnx.data
+models/log_analyzer_pro/
+models/log_analyzer/
+
+# ──────────────────────────────────────────────
+# Logs
+# ──────────────────────────────────────────────
+logs/
+*.log
+training_output.log
+
+# ──────────────────────────────────────────────
+# MLflow / TensorBoard
+# ──────────────────────────────────────────────
+mlruns/
+lightning_logs/
+tensorboard_logs/
+
+# ──────────────────────────────────────────────
+# Testing / Coverage
+# ──────────────────────────────────────────────
+.coverage
+htmlcov/
+.pytest_cache/
+test_output/
+*.test_results/
+
+# ──────────────────────────────────────────────
+# OS
+# ──────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+*.tmp
+
+# ──────────────────────────────────────────────
+# Config secrets (nếu có)
+# ──────────────────────────────────────────────
+.env
+*.key
+*.pem
+secrets.yaml
+config/local.yaml
